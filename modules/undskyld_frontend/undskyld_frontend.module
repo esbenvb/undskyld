@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Undskyld frontend feature.
+ */
+
+include_once 'undskyld_frontend.features.inc';
