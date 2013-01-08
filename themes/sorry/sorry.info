@@ -1,0 +1,6 @@
+name = "Sorry"
+core = 7.x
+package = "Undskyld"
+stylesheets[all][] = "stylesheets/reset.css"
+stylesheets[all][] = "stylesheets/fonts.css"
+stylesheets[all][] = "stylesheets/sorry.css"

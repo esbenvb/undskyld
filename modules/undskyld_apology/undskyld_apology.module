@@ -1,0 +1,45 @@
+<?php
+/**
+ * @file
+ * Code for the Undskyld apology feature.
+ */
+
+include_once 'undskyld_apology.features.inc';
+
+function undskyld_apology_form_apology_node_form_alter(&$form, &$form_state) {
+  $form['title']['#ajax'] = array(
+    'callback' => 'undskyld_apology_title_change_callback',
+    'wrapper' => 'edit-field-subdomain',
+  );
+  $form['field_subdomain'][LANGUAGE_NONE][0]['value']['#ajax'] = array(
+    'callback' => 'undskyld_apology_subdomain_change_callback',
+    'wrapper' => 'edit-field-subdomain-changed',
+  );
+  global $cookie_domain;
+  $form['field_subdomain'][LANGUAGE_NONE][0]['value']['#suffix'] = '<div>'.$cookie_domain.'</div>';
+  $form['field_subdomain_changed'] = array(
+    '#type' => 'container',
+    'element' => array(
+      '#type' => 'hidden',
+      '#default_value' => FALSE,
+    ),
+    '#tree' => TRUE,
+  );
+}
+
+function undskyld_apology_subdomain_change_callback($form, $form_state) {
+  if($form['field_subdomain'][LANGUAGE_NONE][0]['value']['#value'] != '') {
+    $form['field_subdomain_changed']['element']['#value'] = TRUE;
+  }
+  return $form['field_subdomain_changed'];
+}
+
+function undskyld_apology_title_change_callback($form, $form_state) {
+  if($form['field_subdomain'][LANGUAGE_NONE][0]['value']['#value'] == '' || empty($form['field_subdomain_changed']['element']['#value'])) {
+    module_load_include('inc', 'pathauto');
+    $newvalue = pathauto_cleanstring($form['title']['#value']);
+    $form['field_subdomain'][LANGUAGE_NONE][0]['value']['#value'] = $newvalue;
+  }
+  return $form['field_subdomain'];
+}
+ 

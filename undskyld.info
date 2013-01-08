@@ -1,0 +1,16 @@
+name = Undskyld profile
+description = Undskyld profile
+core = 7.x
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = dblog
+dependencies[] = toolbar
+dependencies[] = field_ui
+dependencies[] = image
+
+; Contrib
+dependencies[] = features
+dependencies[] = machine_name
+
+; Custom
+dependencies[] = undskyld_base

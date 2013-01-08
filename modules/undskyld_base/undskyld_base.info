@@ -1,0 +1,15 @@
+name = Undskyld base
+core = 7.x
+package = Undskyld
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = admin_theme
+features[variable][] = clean_url
+features[variable][] = node_admin_theme
+features[variable][] = site_default_country
+features[variable][] = site_mail
+features[variable][] = site_name
+features[variable][] = theme_default
+features[variable][] = user_register

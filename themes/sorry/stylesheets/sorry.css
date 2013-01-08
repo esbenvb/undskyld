@@ -1,0 +1,131 @@
+/* line 27, ../sass/sorry.scss */
+body {
+  font-size: 16px;
+  font-family: "Monda", sans-serif;
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 8%, #2989d8 25%, #207cca 84%, #7db9e8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #1e5799), color-stop(25%, #2989d8), color-stop(84%, #207cca), color-stop(100%, #7db9e8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #1e5799 8%, #2989d8 25%, #207cca 84%, #7db9e8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #1e5799 8%, #2989d8 25%, #207cca 84%, #7db9e8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #1e5799 8%, #2989d8 25%, #207cca 84%, #7db9e8 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #1e5799 8%, #2989d8 25%, #207cca 84%, #7db9e8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+  /* IE6-9 */
+}
+/* line 28, ../sass/sorry.scss */
+body > .panel-display {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background: #e1ffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #e1ffff 0%, #e1ffff 5%, #eff9fc 11%, #eff9fc 91%, #c8eefb 97%, #bee4f8 100%, #b1d8f5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e1ffff), color-stop(5%, #e1ffff), color-stop(11%, #eff9fc), color-stop(91%, #eff9fc), color-stop(97%, #c8eefb), color-stop(100%, #bee4f8), color-stop(100%, #b1d8f5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #e1ffff 0%, #e1ffff 5%, #eff9fc 11%, #eff9fc 91%, #c8eefb 97%, #bee4f8 100%, #b1d8f5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #e1ffff 0%, #e1ffff 5%, #eff9fc 11%, #eff9fc 91%, #c8eefb 97%, #bee4f8 100%, #b1d8f5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #e1ffff 0%, #e1ffff 5%, #eff9fc 11%, #eff9fc 91%, #c8eefb 97%, #bee4f8 100%, #b1d8f5 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #e1ffff 0%, #e1ffff 5%, #eff9fc 11%, #eff9fc 91%, #c8eefb 97%, #bee4f8 100%, #b1d8f5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=1 );
+  /* IE6-9 */
+}
+
+/* line 41, ../sass/sorry.scss */
+.page-header-box {
+  background-color: white;
+  padding: 5px;
+}
+/* line 42, ../sass/sorry.scss */
+.page-header-box h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: "Galindo", cursive;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+
+/* line 55, ../sass/sorry.scss */
+.pane-page-primary-links li {
+  float: left;
+  margin: 5px;
+}
+/* line 56, ../sass/sorry.scss */
+.pane-page-primary-links li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  background-color: lightpink;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+/* line 64, ../sass/sorry.scss */
+.pane-page-primary-links li a:hover {
+  background-color: lightyellow;
+}
+
+/* line 74, ../sass/sorry.scss */
+.panel-col-middle {
+  padding: 10px;
+}
+
+/* line 78, ../sass/sorry.scss */
+.panel-2col-bricks .panel-col-first {
+  width: auto;
+  max-width: 700px;
+}
+
+/* line 83, ../sass/sorry.scss */
+.panel-2col-bricks .panel-col-last {
+  width: auto;
+  max-width: 240px;
+  float: right;
+  border: 1px solid black;
+  background-color: lightgreen;
+  border-radius: 3px;
+}
+
+/* line 96, ../sass/sorry.scss */
+#mini-panel-user_logged_in .pane-user-name {
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* line 101, ../sass/sorry.scss */
+#mini-panel-user_logged_in .panel-separator {
+  display: none;
+}
+/* line 104, ../sass/sorry.scss */
+#mini-panel-user_logged_in .pane-system-user-menu {
+  float: left;
+}
+/* line 106, ../sass/sorry.scss */
+#mini-panel-user_logged_in .pane-system-user-menu ul li {
+  float: left;
+}
+/* line 108, ../sass/sorry.scss */
+#mini-panel-user_logged_in .pane-system-user-menu ul li a {
+  margin: 5px;
+  border: 1px;
+  text-decoration: none;
+  color: #333;
+}
+/* line 113, ../sass/sorry.scss */
+#mini-panel-user_logged_in .pane-system-user-menu ul li a:hover {
+  color: red;
+}
