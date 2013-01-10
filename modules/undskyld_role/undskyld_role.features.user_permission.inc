@@ -24,6 +24,8 @@ function undskyld_role_user_default_permissions() {
     'name' => 'access comments',
     'roles' => array(
       0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -418,6 +420,7 @@ function undskyld_role_user_default_permissions() {
     'name' => 'edit own comments',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -454,6 +457,7 @@ function undskyld_role_user_default_permissions() {
     'name' => 'post comments',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'comment',
   );
@@ -481,6 +485,7 @@ function undskyld_role_user_default_permissions() {
     'name' => 'skip comment approval',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'comment',
   );

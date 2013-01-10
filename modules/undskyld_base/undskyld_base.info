@@ -14,7 +14,6 @@ features[menu_custom][] = main-menu
 features[menu_custom][] = menu-log-in-menu
 features[menu_custom][] = user-menu
 features[menu_links][] = main-menu:<front>
-features[menu_links][] = main-menu:node
 features[menu_links][] = main-menu:node/1
 features[menu_links][] = main-menu:node/add/apology
 features[menu_links][] = menu-log-in-menu:user

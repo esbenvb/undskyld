@@ -42,4 +42,17 @@ function undskyld_apology_title_change_callback($form, $form_state) {
   }
   return $form['field_subdomain'];
 }
- 
+
+function undskyld_apology_form_comment_form_alter(&$form, &$form_state) {
+  $form['comment_body']['#after_build'][] = 'undskyld_apology_customize_comment_form';
+  // Custom text on form submit btn, for better translations.
+  $form['actions']['submit']['#value'] = t('Submit comment');
+}
+
+/**
+ * Removes the filter formats crap from form.
+ */
+function undskyld_apology_customize_comment_form(&$form) {
+  $form[$form['#language']][0]['format']['#access'] = FALSE;
+  return $form;
+}
